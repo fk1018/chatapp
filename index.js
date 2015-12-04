@@ -9,8 +9,7 @@ app.
 	get('/', 
 		function (req, res) {
 			res.sendFile(__dirname+'/public/html/index.html');
-		}
-	);
+		});
 
 io.
 	on('connection', 
@@ -20,19 +19,15 @@ io.
 				on('disconnect', 
 					function(){
 						console.log('user disconnected');
-  					}
-  				)
+  					})
   				.on('chat message',
   					function(msg){
   						console.log('message: ' + msg);
-  					}
-  				);
-		}
-	);
+  					});
+		});
 
 http
 	.listen(3000,
 		function(){
   			console.log('listening on *:3000');
-		}
-	);
+		});
