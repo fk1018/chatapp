@@ -1,7 +1,7 @@
-var express 		= require('express'),
-app 				= express(),
-http 				= require('http').Server(app);
-io					= require('socket.io')(http);
+var express          = require('express'),
+app                  = express(),
+http                 = require('http').Server(app);
+io                   = require('socket.io')(http);
 
 app.
 	use(express.static(__dirname + '/public'));
@@ -19,12 +19,12 @@ io.
 			socket.
 				on('disconnect', 
 					function(){
-    					console.log('user disconnected');
+						console.log('user disconnected');
   					}
   				)
   				.on('chat message',
   					function(msg){
-    					console.log('message: ' + msg);
+  						console.log('message: ' + msg);
   					}
   				);
 		}
