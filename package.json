@@ -1,0 +1,22 @@
+{
+  "name": "tilted-chatapp",
+  "version": "1.0.0",
+  "description": "tilted.io chat app. ",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "socket.io": "^1.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "expressjs"
+  ],
+  "author": "zzrot <zzrot@tilted.io>",
+  "license": "ISC"
+}
